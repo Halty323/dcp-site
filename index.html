@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCP - Премиальная Электроника</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">DCP</div>
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#products">Товары</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="cart.html" class="cart-link">
+                    <span>🛒 Корзина</span>
+                    <span class="cart-count">0</span>
+                </a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-filters">
+            <h3>Категории</h3>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">Все товары</button>
+                <button class="category-btn" data-category="Smartphones">Смартфоны</button>
+                <button class="category-btn" data-category="Audio">Аудио</button>
+                <button class="category-btn" data-category="Wearables">Носимые устройства</button>
+                <button class="category-btn" data-category="Computers">Компьютеры</button>
+                <button class="category-btn" data-category="Tablets">Планшеты</button>
+                <button class="category-btn" data-category="Gaming">Игры</button>
+                <button class="category-btn" data-category="TVs">Телевизоры</button>
+                <button class="category-btn" data-category="Cameras">Камеры</button>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Добро пожаловать в DCP</h1>
+                <p class="hero-subtitle">Премиальная Электроника для Вашего Образа Жизни</p>
+                <a href="#products" class="cta-button">Купить Сейчас</a>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Рекомендуемые Товары</h2>
+                    <select id="sortSelect" class="sort-select">
+                        <option value="default">По умолчанию</option>
+                        <option value="price-low">Цена: от низкой к высокой</option>
+                        <option value="price-high">Цена: от высокой к низкой</option>
+                        <option value="name-asc">Название: А-Я</option>
+                        <option value="name-desc">Название: Я-А</option>
+                    </select>
+                </div>
+                <div class="products-controls">
+                    <p id="productCount" class="product-count">Показаны все товары</p>
+                </div>
+                <div class="products-grid" id="productsGrid">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">О DCP</h2>
+                <div class="about-content">
+                    <p>DCP — ваш надежный источник премиальной электроники. Мы предлагаем новейшие технологии и инновационные устройства для улучшения вашей повседневной жизни. От смартфонов до устройств для умного дома — у нас есть всё, что вам нужно.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь с Нами</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Email:</strong> info@dcpelectronics.ru
+                        </div>
+                        <div class="contact-item">
+                            <strong>Телефон:</strong> 8(800) 555-35-35
+                        </div>
+                        <div class="contact-item">
+                            <strong>Адрес:</strong> ул. Рубинштейна, 10, Санкт-Петербург, Россия
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003152!2d30.34501041580235!3d59.92947816905419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a8b3b4b3b3%3A0x5b8b3b3b3b3b3b3b!2z0YPQuy4g0KDRg9Cx0LjQndC90LjRhtCwLCAxMCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMDI0!5e0!3m2!1sru!2sru!4v1234567890123!5m2!1sru!2sru&q=ул.+Рубинштейна,+10,+Санкт-Петербург,+Россия"
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Расположение DCP Electronics">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 DCP. Все права защищены.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
+
