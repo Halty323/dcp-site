@@ -5,7 +5,7 @@ const products = [
         name: "Смартфон Pro X",
         category: "Smartphones",
         price: 69900,
-        image: "images/product-1.jpg"
+        image: "images/phone1.png"
     },
     {
         id: 2,
