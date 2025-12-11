@@ -12,35 +12,35 @@ const products = [
         name: "Беспроводные Наушники",
         category: "Audio",
         price: 12900,
-        image: "images/product-2.jpg"
+        image: "images/pods1.png"
     },
     {
         id: 3,
         name: "Умные Часы",
         category: "Wearables",
         price: 29900,
-        image: "images/product-3.jpg"
+        image: "images/watch1.png"
     },
     {
         id: 4,
         name: "Ноутбук Ultra",
         category: "Computers",
         price: 129900,
-        image: "images/product-4.jpg"
+        image: "images/laptop1.png"
     },
     {
         id: 5,
         name: "Планшет Pro",
         category: "Tablets",
         price: 49900,
-        image: "images/product-5.jpg"
+        image: "images/pad1.png"
     },
     {
         id: 6,
         name: "Игровая Консоль",
         category: "Gaming",
         price: 39900,
-        image: "images/product-6.jpg"
+        image: "images/console1.png"
     },
     {
         id: 7,
