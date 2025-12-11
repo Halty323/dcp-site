@@ -58,10 +58,59 @@ const products = [
     },
     {
         id: 9,
-        name: "Понос кошки",
-        category: "Shit",
-        price: 1000000,
+        name: "Смартфон Galaxy S",
+        category: "Smartphones",
+        price: 79900,
         image: "images/product-9.jpg"
+    },
+    {
+        id: 10,
+        name: "Наушники Over-Ear Pro",
+        category: "Audio",
+        price: 15900,
+        image: "images/product-10.jpg"
+    },
+    {
+        id: 11,
+        name: "Фитнес-браслет",
+        category: "Wearables",
+        price: 12900,
+        image: "images/product-11.jpg"
+    },
+    {
+        id: 12,
+        name: "Игровой ПК",
+        category: "Computers",
+        price: 149900,
+        image: "images/product-12.jpg"
+    },
+    {
+        id: 13,
+        name: "Планшет Mini",
+        category: "Tablets",
+        price: 29900,
+        image: "images/product-13.jpg"
+    },
+    {
+        id: 14,
+        name: "Игровая Приставка Pro",
+        category: "Gaming",
+        price: 49900,
+        image: "images/product-14.jpg"
+    },
+    {
+        id: 15,
+        name: "Телевизор 65\" 4K",
+        category: "TVs",
+        price: 99900,
+        image: "images/product-15.jpg"
+    },
+    {
+        id: 16,
+        name: "Экшн-камера",
+        category: "Cameras",
+        price: 24900,
+        image: "images/product-16.jpg"
     }
 ];
 
@@ -194,6 +243,17 @@ function updateProductCount() {
 function renderProducts() {
     const productsGrid = document.getElementById('productsGrid');
     if (!productsGrid) return;
+
+    const categoryNames = {
+        'Smartphones': 'Смартфоны',
+        'Audio': 'Аудио',
+        'Wearables': 'Носимые устройства',
+        'Computers': 'Компьютеры',
+        'Tablets': 'Планшеты',
+        'Gaming': 'Игровое',
+        'TVs': 'Телевизоры',
+        'Cameras': 'Камеры'
+    };
     
     productsGrid.innerHTML = '';
 
@@ -231,7 +291,7 @@ function renderProducts() {
                 </div>
                 <div class="product-info">
                     <div class="product-name">${product.name}</div>
-                    <div class="product-category">${product.category}</div>
+                    <div class="product-category">${categoryNames[product.category]}</div>
                     <div class="product-price">${product.price.toLocaleString('ru-RU')} ₽</div>
                 </div>
             </a>
